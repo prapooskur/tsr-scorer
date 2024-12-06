@@ -21,7 +21,7 @@ export default function Member({ score, updateScore }: Props) {
 			<button className={symbols.className + ' arrow'} onClick={() => updateScore(s => s + 1)} disabled={score === 99}>🡅</button>
 			<span className="score" onClick={handleClick} title="Click to copy score">{score}</span>
 			<input placeholder="name" tabIndex={1} />
-			<button className={symbols.className + ' arrow'} onClick={() => updateScore(s => s - 1)} disabled={score === 1}>🡇</button>
+			<button className={symbols.className + ' arrow'} onClick={() => updateScore(s => s - 1)} disabled={false}>🡇</button>
 		</div>
 	)
 }
